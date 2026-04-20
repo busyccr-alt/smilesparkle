@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smile Sparkle Dental Clinic | Lalitpur</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Smile Sparkle Dental Clinic (Nanda Polyclinic, 2nd Floor, M8FF+F5J, Dhaugal Rd, Lalitpur) offers expert dental care including braces, implants, root canal, gum treatment, and oral surgery. Open 7 days a week, 8 AM to 7 PM.">
+  <meta name="keywords" content="dentist in Lalitpur, dental clinic Patan, braces Nepal, dental implants, root canal, oral surgery, Smile Sparkle Dental Clinic">
+  <meta name="author" content="Smile Sparkle Dental Clinic">
+  <meta name="robots" content="index, follow">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .text-navy { color: #0b1b3a; }
+    .bg-navy { background-color: #0b1b3a; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50 border-b-4 border-yellow-400">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" class="h-12 w-12 rounded-full object-cover shadow">
+      <h1 class="text-2xl font-bold text-navy">Smile Sparkle</h1>
+    </div>
+
+    <nav class="space-x-6 font-medium">
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#appointment">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-navy text-white text-center py-20">
+  <img src="logo.png" class="mx-auto mb-6 h-28 w-28 rounded-full border-4 border-yellow-400 shadow-lg">
+
+  <h2 class="text-4xl font-bold mb-3">Your Smile, Our Priority</h2>
+  <p class="text-yellow-300 mb-6">Advanced Dental Care in Patan, Lalitpur</p>
+
+  <div class="space-x-4">
+    <a href="#appointment" class="bg-yellow-400 text-navy px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+      Book Appointment
+    </a>
+
+    <a href="tel:+9779813181489" class="bg-white text-navy px-6 py-3 rounded-full font-semibold hover:bg-gray-100">
+      Call Now
+    </a>
+
+    <a href="https://wa.me/9779813181489" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">
+      WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 bg-gradient-to-b from-white to-gray-100">
+  <h3 class="text-4xl font-bold text-center mb-14 text-navy">Our Services</h3>
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
+      🦷 <h4 class="text-xl font-semibold text-navy mt-2">General Dentistry</h4>
+      <p class="text-gray-600 mb-4">Checkups, cleaning, fillings & prevention.</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
+      🏥 <h4 class="text-xl font-semibold text-navy mt-2">Oral Surgery</h4>
+      <p class="text-gray-600 mb-4">Extractions & surgical care.</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
+      🌿 <h4 class="text-xl font-semibold text-navy mt-2">Periodontics</h4>
+      <p class="text-gray-600 mb-4">Gum treatment & implants.</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
+      🧬 <h4 class="text-xl font-semibold text-navy mt-2">Endodontics</h4>
+      <p class="text-gray-600 mb-4">Root canal treatment.</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
+      📐 <h4 class="text-xl font-semibold text-navy mt-2">Orthodontics</h4>
+      <p class="text-gray-600 mb-4">Braces & aligners.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment" class="py-20 text-center">
+  <h3 class="text-4xl font-bold mb-8 text-navy">Book Appointment</h3>
+
+  <div class="max-w-xl mx-auto space-y-4 px-6">
+
+    <input id="name" class="w-full p-3 border rounded" placeholder="Full Name" required>
+    <input id="phone" class="w-full p-3 border rounded" placeholder="Phone Number" required>
+
+    <select id="service" class="w-full p-3 border rounded">
+      <option>General Dentistry</option>
+      <option>Oral Surgery</option>
+      <option>Periodontics</option>
+      <option>Endodontics</option>
+      <option>Orthodontics</option>
+    </select>
+
+    <select id="doctor" class="w-full p-3 border rounded">
+      <option>Any Doctor</option>
+      <option>Dr. Rasna Bajracharya</option>
+      <option>Dr. Bijay Karki</option>
+    </select>
+
+    <input id="date" type="date" class="w-full p-3 border rounded" required>
+
+    <select id="time" class="w-full p-3 border rounded">
+      <option>Morning (8 AM - 11 AM)</option>
+      <option>Afternoon (11 AM - 3 PM)</option>
+      <option>Evening (3 PM - 7 PM)</option>
+    </select>
+
+    <textarea id="message" class="w-full p-3 border rounded" placeholder="Message (optional)"></textarea>
+
+    <button onclick="sendWhatsApp()"
+      class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 w-full font-semibold">
+      Send on WhatsApp
+    </button>
+
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="py-16">
+  <iframe class="w-full h-80 rounded-xl"
+    src="https://maps.google.com/maps?q=M8FF%2BF5J%20Dhaugal%20Rd%20Lalitpur%2044600%20Nepal&output=embed">
+  </iframe>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 text-center">
+  <h3 class="text-4xl font-bold mb-6 text-navy">Contact Us</h3>
+
+  <p>📍 Nanda Polyclinic, 2nd Floor</p>
+  <p>📍 M8FF+F5J, Dhaugal Rd, Lalitpur</p>
+
+  <p class="mt-4">
+    📞 <a href="tel:+9779813181489" class="text-yellow-600">+977 9813181489</a>
+  </p>
+
+  <div class="bg-white max-w-md mx-auto p-6 rounded-2xl shadow mt-6">
+    <h4 class="text-xl font-semibold text-navy">Hours</h4>
+    <p>Open 7 Days</p>
+    <p>8:00 AM – 7:00 PM</p>
+    <p id="status" class="mt-2 font-semibold"></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 border-t bg-white">
+  © 2026 Smile Sparkle Dental Clinic
+</footer>
+
+<!-- WHATSAPP SCRIPT -->
+<script>
+function sendWhatsApp() {
+
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const service = document.getElementById("service").value;
+  const doctor = document.getElementById("doctor").value;
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  const message = document.getElementById("message").value;
+
+  if(!name || !phone || !date){
+    alert("Please fill required fields");
+    return;
+  }
+
+  const text =
+`🦷 Appointment Request
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Doctor: ${doctor}
+Date: ${date}
+Time: ${time}
+Message: ${message || "N/A"}`;
+
+  const url = `https://wa.me/9779813181489?text=${encodeURIComponent(text)}`;
+
+  window.open(url, "_blank");
+}
+</script>
+
+<!-- OPEN/CLOSE -->
+<script>
+function updateStatus(){
+  const hour = new Date().getHours();
+  const el = document.getElementById("status");
+
+  if(hour >= 8 && hour < 19){
+    el.textContent = "🟢 Open Now";
+    el.className = "text-green-600 font-semibold";
+  } else {
+    el.textContent = "🔴 Closed";
+    el.className = "text-red-600 font-semibold";
+  }
+}
+updateStatus();
+</script>
+
+</body>
+</html>
