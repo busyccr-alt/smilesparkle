@@ -3,219 +3,237 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smile Sparkle Dental Clinic | Lalitpur</title>
+  
+  <title>Smile Sparkle Dental Clinic | Dentist in Patan Nepal</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Smile Sparkle Dental Clinic (Nanda Polyclinic, 2nd Floor, M8FF+F5J, Dhaugal Rd, Lalitpur) offers expert dental care including braces, implants, root canal, gum treatment, and oral surgery. Open 7 days a week, 8 AM to 7 PM.">
-  <meta name="keywords" content="dentist in Lalitpur, dental clinic Patan, braces Nepal, dental implants, root canal, oral surgery, Smile Sparkle Dental Clinic">
+  <meta name="description" content="Smile Sparkle Dental Clinic in Patan offers implants, root canal, braces, crowns, and cosmetic dentistry. Book appointment via WhatsApp.">
+  <meta name="keywords" content="dentist in Patan, dental clinic Patan, implants Nepal, root canal Patan, braces Patan">
   <meta name="author" content="Smile Sparkle Dental Clinic">
-  <meta name="robots" content="index, follow">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- GREEN PREMIUM THEME -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#064E3B',   // deep green
+            secondary: '#10B981', // emerald
+            accent: '#D4AF37'     // gold
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
-    .text-navy { color: #0b1b3a; }
-    .bg-navy { background-color: #0b1b3a; }
+    .marquee {
+      position: absolute;
+      left: 0;
+      width: 200%;
+      white-space: nowrap;
+      animation: scrollText linear infinite;
+    }
+
+    @keyframes scrollText {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .glow {
+      text-shadow: 0 0 10px rgba(212,175,55,0.6),
+                   0 0 20px rgba(212,175,55,0.4);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #D4AF37, #10B981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-gray-800">
 
 <!-- NAVBAR -->
-<header class="bg-white shadow sticky top-0 z-50 border-b-4 border-yellow-400">
+<header class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <div class="flex items-center space-x-3">
-      <img src="logo.png" class="h-12 w-12 rounded-full object-cover shadow">
-      <h1 class="text-2xl font-bold text-navy">Smile Sparkle</h1>
+      <img src="logo.png" class="h-10">
+      <h1 class="text-2xl font-bold text-primary">Smile Sparkle</h1>
     </div>
-
-    <nav class="space-x-6 font-medium">
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#appointment">Book</a>
-      <a href="#contact">Contact</a>
+    <nav class="space-x-6 hidden md:block">
+      <a href="#services" class="hover:text-secondary">Services</a>
+      <a href="#specialists" class="hover:text-secondary">Team</a>
+      <a href="#contact" class="hover:text-secondary">Contact</a>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="bg-navy text-white text-center py-20">
-  <img src="logo.png" class="mx-auto mb-6 h-28 w-28 rounded-full border-4 border-yellow-400 shadow-lg">
+<section class="bg-primary text-white py-28 relative overflow-hidden">
 
-  <h2 class="text-4xl font-bold mb-3">Your Smile, Our Priority</h2>
-  <p class="text-yellow-300 mb-6">Advanced Dental Care in Patan, Lalitpur</p>
+  <!-- Animated Background -->
+  <div class="absolute inset-0 pointer-events-none">
 
-  <div class="space-x-4">
-    <a href="#appointment" class="bg-yellow-400 text-navy px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
-      Book Appointment
-    </a>
+    <div class="marquee text-5xl opacity-5" style="top:15%; animation-duration: 30s;">
+      IMPLANTS • ZIRCONIA • CROWNS • ROOT CANAL • ALIGNERS • SMILE DESIGN • VENEERS • BLEACHING • FULL MOUTH REHAB • OCCLUSION
+    </div>
 
-    <a href="tel:+9779813181489" class="bg-white text-navy px-6 py-3 rounded-full font-semibold hover:bg-gray-100">
-      Call Now
-    </a>
+    <div class="marquee text-4xl opacity-10" style="top:40%; animation-duration: 40s;">
+      GRAFTING • PFM • METAL CROWNS • COMPOSITE • TMJ • EXTRACTIONS • IMPACTIONS • SURGERY • DENTURES • BRIDGES
+    </div>
 
-    <a href="https://wa.me/9779813181489" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">
-      WhatsApp
-    </a>
+    <div class="marquee text-6xl opacity-5" style="top:70%; animation-duration: 50s;">
+      ORTHODONTICS • ENDODONTICS • PERIODONTICS • PROSTHODONTICS • COSMETIC DENTISTRY • LASER DENTISTRY
+    </div>
+
+  </div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-6xl mx-auto text-center px-6">
+
+    <img src="logo.png" class="mx-auto h-24 mb-6">
+
+    <h2 class="text-4xl md:text-6xl font-bold mb-6">
+      Premium 
+      <span class="gradient-text glow">DENTISTRY</span> 
+      in Patan, Lalitpur
+    </h2>
+
+    <p class="text-lg mb-10">
+      Advanced treatments. Gentle care. Trusted professionals.
+    </p>
+
+    <div class="flex justify-center gap-4 flex-wrap">
+
+      <a href="https://wa.me/9779761326306?text=Hello%20I%20would%20like%20to%20book%20an%20appointment"
+         class="bg-accent text-primary px-8 py-4 rounded-full font-semibold hover:bg-accent/90">
+         Book on WhatsApp
+      </a>
+
+      <a href="tel:+9779761326306"
+         class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-primary">
+         Call Now
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="py-16 bg-primary/5">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-10">Why Choose Us</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">Experienced Doctors</h4>
+        <p>Skilled professionals delivering high-quality care.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">Modern Equipment</h4>
+        <p>Advanced tools for precise and comfortable treatment.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">Patient Comfort</h4>
+        <p>Gentle care with a friendly environment.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SEO SECTION -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-4">Your Trusted Dentist in Patan</h3>
+    <p class="mb-4">
+      Smile Sparkle Dental Clinic is a leading dental clinic in Patan, Lalitpur offering implants, root canal treatment, braces, and cosmetic dentistry.
+    </p>
+    <p>
+      If you are searching for a reliable dentist in Patan, our experienced team provides gentle and professional care.
+    </p>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="py-24 bg-gradient-to-b from-white to-gray-100">
-  <h3 class="text-4xl font-bold text-center mb-14 text-navy">Our Services</h3>
+<section id="services" class="py-16 bg-primary/5">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+    <div class="grid md:grid-cols-3 gap-8">
 
-    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
-      🦷 <h4 class="text-xl font-semibold text-navy mt-2">General Dentistry</h4>
-      <p class="text-gray-600 mb-4">Checkups, cleaning, fillings & prevention.</p>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold">General & Cosmetic Dentistry</h4>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold">Oral Surgery</h4>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold">Periodontics (Implants & Grafts)</h4>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold">Endodontics (Root Canal)</h4>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold">Orthodontics (Braces & Aligners)</h4>
+      </div>
+
     </div>
-
-    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
-      🏥 <h4 class="text-xl font-semibold text-navy mt-2">Oral Surgery</h4>
-      <p class="text-gray-600 mb-4">Extractions & surgical care.</p>
-    </div>
-
-    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
-      🌿 <h4 class="text-xl font-semibold text-navy mt-2">Periodontics</h4>
-      <p class="text-gray-600 mb-4">Gum treatment & implants.</p>
-    </div>
-
-    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
-      🧬 <h4 class="text-xl font-semibold text-navy mt-2">Endodontics</h4>
-      <p class="text-gray-600 mb-4">Root canal treatment.</p>
-    </div>
-
-    <div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl hover:-translate-y-2 transition">
-      📐 <h4 class="text-xl font-semibold text-navy mt-2">Orthodontics</h4>
-      <p class="text-gray-600 mb-4">Braces & aligners.</p>
-    </div>
-
   </div>
 </section>
 
-<!-- APPOINTMENT -->
-<section id="appointment" class="py-20 text-center">
-  <h3 class="text-4xl font-bold mb-8 text-navy">Book Appointment</h3>
+<!-- TEAM -->
+<section id="specialists" class="py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-10">Our Doctors</h3>
 
-  <div class="max-w-xl mx-auto space-y-4 px-6">
+    <div class="grid md:grid-cols-2 gap-8">
 
-    <input id="name" class="w-full p-3 border rounded" placeholder="Full Name" required>
-    <input id="phone" class="w-full p-3 border rounded" placeholder="Phone Number" required>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <div class="w-24 h-24 mx-auto bg-gray-200 rounded-full mb-4"></div>
+        <h4 class="font-semibold">Dr. Rasna Bajracharya</h4>
+        <p class="text-sm text-gray-600">General Dentist</p>
+      </div>
 
-    <select id="service" class="w-full p-3 border rounded">
-      <option>General Dentistry</option>
-      <option>Oral Surgery</option>
-      <option>Periodontics</option>
-      <option>Endodontics</option>
-      <option>Orthodontics</option>
-    </select>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <div class="w-24 h-24 mx-auto bg-gray-200 rounded-full mb-4"></div>
+        <h4 class="font-semibold">Dr. Bijay Karki</h4>
+        <p class="text-sm text-gray-600">Oral & Maxillofacial Surgeon</p>
+      </div>
 
-    <select id="doctor" class="w-full p-3 border rounded">
-      <option>Any Doctor</option>
-      <option>Dr. Rasna Bajracharya</option>
-      <option>Dr. Bijay Karki</option>
-    </select>
-
-    <input id="date" type="date" class="w-full p-3 border rounded" required>
-
-    <select id="time" class="w-full p-3 border rounded">
-      <option>Morning (8 AM - 11 AM)</option>
-      <option>Afternoon (11 AM - 3 PM)</option>
-      <option>Evening (3 PM - 7 PM)</option>
-    </select>
-
-    <textarea id="message" class="w-full p-3 border rounded" placeholder="Message (optional)"></textarea>
-
-    <button onclick="sendWhatsApp()"
-      class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 w-full font-semibold">
-      Send on WhatsApp
-    </button>
-
+    </div>
   </div>
-</section>
-
-<!-- MAP -->
-<section class="py-16">
-  <iframe class="w-full h-80 rounded-xl"
-    src="https://maps.google.com/maps?q=M8FF%2BF5J%20Dhaugal%20Rd%20Lalitpur%2044600%20Nepal&output=embed">
-  </iframe>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 text-center">
-  <h3 class="text-4xl font-bold mb-6 text-navy">Contact Us</h3>
-
-  <p>📍 Nanda Polyclinic, 2nd Floor</p>
-  <p>📍 M8FF+F5J, Dhaugal Rd, Lalitpur</p>
-
-  <p class="mt-4">
-    📞 <a href="tel:+9779813181489" class="text-yellow-600">+977 9813181489</a>
-  </p>
-
-  <div class="bg-white max-w-md mx-auto p-6 rounded-2xl shadow mt-6">
-    <h4 class="text-xl font-semibold text-navy">Hours</h4>
-    <p>Open 7 Days</p>
-    <p>8:00 AM – 7:00 PM</p>
-    <p id="status" class="mt-2 font-semibold"></p>
-  </div>
+<section id="contact" class="py-16 text-center bg-primary/5">
+  <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+  <p>Patan, Lalitpur, Nepal</p>
+  <p>Phone: +977 9761326306</p>
+  <p>Email: info@smilesparkle.com</p>
 </section>
 
+<!-- WHATSAPP -->
+<a href="https://wa.me/9779761326306"
+   class="fixed bottom-5 right-5 bg-secondary text-white px-5 py-3 rounded-full shadow-lg hover:bg-secondary/80">
+   WhatsApp
+</a>
+
 <!-- FOOTER -->
-<footer class="text-center py-6 border-t bg-white">
-  © 2026 Smile Sparkle Dental Clinic
+<footer class="bg-primary text-white py-6 text-center">
+  <p>© 2026 Smile Sparkle Dental Clinic</p>
 </footer>
-
-<!-- WHATSAPP SCRIPT -->
-<script>
-function sendWhatsApp() {
-
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const service = document.getElementById("service").value;
-  const doctor = document.getElementById("doctor").value;
-  const date = document.getElementById("date").value;
-  const time = document.getElementById("time").value;
-  const message = document.getElementById("message").value;
-
-  if(!name || !phone || !date){
-    alert("Please fill required fields");
-    return;
-  }
-
-  const text =
-`🦷 Appointment Request
-
-Name: ${name}
-Phone: ${phone}
-Service: ${service}
-Doctor: ${doctor}
-Date: ${date}
-Time: ${time}
-Message: ${message || "N/A"}`;
-
-  const url = `https://wa.me/9779813181489?text=${encodeURIComponent(text)}`;
-
-  window.open(url, "_blank");
-}
-</script>
-
-<!-- OPEN/CLOSE -->
-<script>
-function updateStatus(){
-  const hour = new Date().getHours();
-  const el = document.getElementById("status");
-
-  if(hour >= 8 && hour < 19){
-    el.textContent = "🟢 Open Now";
-    el.className = "text-green-600 font-semibold";
-  } else {
-    el.textContent = "🔴 Closed";
-    el.className = "text-red-600 font-semibold";
-  }
-}
-updateStatus();
-</script>
 
 </body>
 </html>
